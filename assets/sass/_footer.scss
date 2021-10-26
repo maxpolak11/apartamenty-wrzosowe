@@ -1,0 +1,101 @@
+/*
+	#footer
+		.footer-top
+			.footer-menu
+			.mobile
+		.footer-bottom
+*/
+
+#footer{
+	
+	.footer-top{
+		background-color: $black;
+		text-align: center;
+
+		.footer-menu{
+			display: flex;
+			justify-content: space-around;
+			max-width: 700px;
+			margin: 0 auto;
+			padding: 19px;
+			border-bottom: solid 1px $grey-dark;
+
+			a{
+				font-size: 18px;
+				font-weight: 100;
+				text-transform: uppercase;
+				color: #ffffff;
+				display: inline-block;
+				text-decoration: none;
+				@include transition(color,.08s,ease-out);
+
+				&:hover{
+					color: $grey;
+				}
+
+			}
+		}
+
+		.mobile{
+			padding: 90px 0;
+
+			a{
+
+				font-size: 30px;
+				font-weight: 900;
+				color: #ffffff;
+				text-decoration: none;
+
+				svg{
+					margin-right: 30px;
+					vertical-align: middle;
+					height: 55px;
+					width: auto;
+
+					path{
+						fill: #ffffff;
+					}
+				}
+			}
+		}
+
+	}
+
+	.footer-bottom{
+		padding: 30px 0;
+
+		p,a{
+			fon-size: 14px;
+			color: $grey;
+			font-weight: 300;
+		}
+		p{
+			float: left;
+			b{
+				font-weight: 900;
+			}
+		}
+		a{
+			float: right;
+		}
+	}
+
+	@media all and (max-width: 800px){
+		.footer-bottom{
+			padding: 15px 0;
+		}
+		.footer-bottom p .mobile-hide{ display: none; }
+	}
+
+	@media all and (max-width: 480px){
+
+		.footer-menu{
+			display: none !important;
+		}
+		.footer-top .mobile{
+			padding: 60px 0;
+		}
+
+	}
+	
+}

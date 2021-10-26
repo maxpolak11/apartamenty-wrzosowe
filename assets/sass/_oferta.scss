@@ -1,0 +1,163 @@
+/*
+	#oferta
+		.text-1
+		.text-2
+		.cennik
+	.oferta-rezerwacja
+*/
+
+#oferta{
+	padding: 110px 0;
+	background-color: $grey-light;
+
+	.text-1{
+		padding: 100px 0;
+	}
+	.text-2{
+		padding-top: 90px;
+	}
+
+	.text-1,
+	.text-2{
+		p{
+			font-size: 15px;
+			color: $grey;
+			line-height: 26px;
+		}
+	}
+
+	.cennik{
+		display: flex;
+
+		.msc{
+			text-align: center;
+			flex: 1 1 0px;
+			margin-right: 1px;
+
+			&.spec{
+				position: relative;
+				top: -10px;
+
+				.top{
+					height: 64px;
+					line-height: 64px;
+					background-color: $pink;
+				}
+
+				.cena{
+					height: 287px;
+					line-height: 287px;
+				}
+			}
+
+			.top{
+				padding: 0 12px;
+				height: 54px;
+				line-height: 54px;
+				background-color: $grey-dark;
+				
+				p{
+					font-weight: 900;
+					letter-spacing: 0.5px;
+					color: #ffffff;
+					line-height: normal;
+					display: inline-block;
+					vertical-align: middle;
+				}
+
+			}
+
+			.cena{
+				background-color: #ffffff;
+				height: 274px;
+				line-height: 274px;
+
+				p{
+					display: inline-block;
+					vertical-align: middle;
+					line-height: normal;
+
+					font-size: 18px;
+					font-weight: 300;
+					b{
+						font-weight: 900;
+					}
+				}
+
+			}
+		}
+
+	}
+
+	@media all and (max-width: 1023px){
+		padding: 90px 0;
+
+		.text-1{
+			padding: 75px 0;
+		}
+		.text-2{
+			padding-top: 75px;
+		}
+	}
+
+	@media all and (max-width: 850px){
+		.cennik .msc .cena{
+			height: 200px;
+			line-height: 200px;
+		}
+
+		.cennik .msc.spec .cena{
+			height: 213px;
+			line-height: 213px;
+		}	
+	}
+
+	@media all and (max-width: 750px){
+		padding: 75px 0;
+
+		.text-1{
+			padding: 60px 0;
+		}
+		.text-2{
+			padding-top: 60px;
+		}
+
+		.cennik{
+			display: block;
+
+			.msc{
+				margin: 0 0 15px 0;
+				display: flex;
+				position: static !important;
+
+				&:last-child{
+					margin: 0;
+				}
+				.top, .cena{
+					height: 150px !important;
+					line-height: 150px !important;
+				}
+				.top{
+					width: 200px;
+				}
+				.cena{
+					flex: 1 1 0px;
+				}
+			}
+		}
+	}
+
+}
+
+.oferta-rezerwacja{
+	background-color: $black;
+	padding: 8px 0;
+	
+	a{
+		font-size: 15px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #ffffff;
+		float: right;
+	}
+}

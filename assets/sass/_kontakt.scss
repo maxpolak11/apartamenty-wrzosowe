@@ -1,0 +1,163 @@
+/*
+	#kontakt
+		.kontakt-container
+			.formularz
+			#wiadomosc-wyslana
+			.informacje
+*/
+
+#kontakt{
+	background-color: $grey-light;
+	padding: 110px 0;
+
+	.kontakt-container{
+		margin-top: 50px;
+		display: flex;
+		
+		> div{
+			flex: 1 1 0px;
+		}
+
+		.formularz{
+			position: relative;
+			margin-right: 60px;
+
+			label{
+				font-size: 15px;
+				font-weight: 300;
+				display: block;
+				margin-bottom: 2px;
+				margin-top: 13px;
+
+				&:first-child{
+					margin-top: 0;
+				}
+
+				&.error{
+					display: block;
+					color: #f33c3c;
+					margin-top: 3px;
+				}
+			}
+
+			input, textarea, button{
+				display: block;
+				width: 100%;
+				border: none;
+				padding: 14px 16px;
+				margin-top: 2px;
+				// margin-bottom: 13px;
+				font-size: 15px;
+				font-weight: 500;
+
+				border: none !important;
+				outline: none !important;		
+			}
+
+			textarea{
+				resize: none;
+				min-height: 154px;
+			}
+
+			button{
+				margin-top: 13px;
+				@include transition( background-color, .15s, ease-out);
+
+				&:hover{
+					background-color: darken(#fff, 10%);
+				}
+
+			}
+
+			#wiadomosc-wyslana{
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				display: none;
+				opacity: 0;
+
+				.wrapper{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translateX(-50%) translateY(-50%);
+					width: 100%;
+				}
+				h4,p{
+					color: #1b851b;
+				}
+				p{
+					margin-top: 5px;
+				}
+			}
+
+		}
+
+		.informacje{
+			padding-top: 19px;
+
+			h3{
+				margin-bottom: 13px;
+
+				&:first-child{
+					margin-top: 0;
+				}
+			}
+
+			p{
+				color: $grey;
+				font-size: 15px;
+				line-height: 24px;
+				margin-bottom: 60px;
+
+				&:last-child{
+					margin-bottom: 0px;
+				}
+
+				b, a{
+					font-weight: 900;
+					color: $black;
+				}
+
+				&.zadatek{
+					font-size: 13px;
+					font-weight: 900;
+					line-height: 16px;
+				}
+
+			}
+
+
+		}
+	}
+
+	@media all and (max-width: 1023px){
+		padding: 75px 0;
+
+		.kontakt-container .formularz{
+			margin-right: 45px;
+		}
+
+	}
+
+	@media all and (max-width: 750px){
+		padding: 50px 0;
+
+		.kontakt-container{
+			display: block;
+			.formularz{
+				margin-right: 0;
+			}
+			.informacje{
+				padding-top: 50px;
+
+				p{
+					margin-bottom: 30px;
+				}
+			}
+		}		
+	}
+
+}

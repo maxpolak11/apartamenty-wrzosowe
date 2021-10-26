@@ -1,0 +1,40 @@
+
+/* Museo 100 */
+@font-face {
+	font-family: 'Museo';
+	src: url('/assets/fonts/Museo/Museo-100/Museo-100.eot');
+	src: local('☺'), url('/assets/fonts/Museo/Museo-100/Museo-100.woff') format('woff'), url('/assets/fonts/Museo/Museo-100/Museo-100.ttf') format('truetype'), url('/assets/fonts/Museo/Museo-100/Museo-100.svg') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Museo 300 */
+@font-face {
+	font-family: 'Museo';
+	src: url('/assets/fonts/Museo/Museo-300/Museo-300.eot');
+	src: local('☺'), url('/assets/fonts/Museo/Museo-300/Museo-300.woff') format('woff'), url('/assets/fonts/Museo/Museo-300/Museo-300.ttf') format('truetype'), url('/assets/fonts/Museo/Museo-300/Museo-300.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Museo 500 */
+@font-face {
+	font-family: 'Museo';
+	src: url('/assets/fonts/Museo/Museo-500/Museo-500.eot');
+	src: local('☺'), url('/assets/fonts/Museo/Museo-500/Museo-500.woff') format('woff'), url('/assets/fonts/Museo/Museo-500/Museo-500.ttf') format('truetype'), url('/assets/fonts/Museo/Museo-500/Museo-500.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Museo 900 */
+@font-face {
+	font-family: 'Museo';
+	src: url('/assets/fonts/Museo/Museo-900/Museo-900.eot');
+	src: local('☺'), url('/assets/fonts/Museo/Museo-900/Museo-900.woff') format('woff'), url('/assets/fonts/Museo/Museo-900/Museo-900.ttf') format('truetype'), url('/assets/fonts/Museo/Museo-900/Museo-900.svg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}

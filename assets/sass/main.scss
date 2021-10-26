@@ -1,0 +1,134 @@
+
+@import 'include/tools';
+@import 'include/bootstrap';
+@import 'include/fonts';
+
+
+$black:  #1c1c1c;
+$grey: #828282;
+$grey-dark: #414141;
+$grey-light: darken(#cfcfcf, 4%);
+$pink: #a94c78;
+
+
+.container{
+	width: 100%;
+	max-width: 999px !important;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@media all and (max-width: 580px){
+		padding: 0 20px;
+	}
+}
+
+img, a{
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+img{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+p, h1, h2, h3, h4, h5{
+	padding: 0;
+	margin: 0;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, label, input, textarea{
+	font-family: 'Museo', sans-serif;
+}
+a, p, label, input, textarea{
+	font-weight: 500;
+	font-size: 14px;
+}
+
+h2{
+	font-size: 51px;
+	line-height: 46px;
+	font-weight: 900;
+	color: $grey-dark;
+	text-transform: uppercase;
+
+	&.white{
+		color: #ffffff;
+	}
+
+	span.thin{
+		font-weight: 100;
+	}
+
+	span.kropka{
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: $pink;
+		position: relative;
+		left: 4px;
+	}
+
+	@media all and (max-width: 1023px){
+		font-size: 40px;
+		line-height: 36px;
+	}
+}
+
+h3{
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 29px;
+	color: $grey-dark;
+
+	&.white{
+		color: #ffffff;
+	}
+
+	@media all and (max-width: 1023px){
+		font-size: 21px;
+	}
+}
+
+h4{
+	font-size: 19px;
+	line-height: 18px;
+	color: $grey-dark;
+	text-transform: uppercase;
+}
+
+h5{
+	font-size: 16px;
+	font-weight: 300;
+
+	&.white{
+		color: #ffffff
+	}
+}
+
+#body-overlay{
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background-color: rgba($black, 0.65);
+	display: none;
+	opacity: 0;
+	cursor: pointer;
+}
+
+@import 'header';
+
+@import 'apartamenty-i-okolica';
+
+@import 'o-nas';
+@import 'oferta';
+@import 'galeria';
+@import 'kontakt';
+
+@import 'footer';
