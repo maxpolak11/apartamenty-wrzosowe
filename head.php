@@ -1,5 +1,5 @@
 	
-	<meta name="robots" content="noindex,follow">
+	<meta name="robots" content="noindex, nofollow">
 
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
